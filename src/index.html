@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';" /> -->
+    <title>Practice</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 style="font-weight: bold">Electron App</h1>
+    <div class="container">
+      <br /><br />
+      <h1>File Converter</h1>
+      <div class="form-group">
+        <label for="format">Select:</label>
+        <select id="format" class="form-control">
+          <option disabled>----SELECT-----</option>
+          <option value="mp3">MP3</option>
+          <option value="avi">AVI</option>
+          <option value="fvl">FVL</option>
+          <option value="mp4">MP4</option>
+        </select>
+      </div>
+      <br />
+      <button id="upload-file" class="btn btn-block btn-danger">
+        Select File and Convert file
+      </button>
+      <div id="information"></div>
+    </div>
+  </body>
+  <script type="module" defer src="./render.js"></script>
+</html>
